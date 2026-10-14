@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public GameObject fireballPrefab;
     public Transform attackPoint;
 
+    public int coins = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +33,11 @@ public class Player : MonoBehaviour
         position, attackPoint.
         rotation);
         }
+    }
+
+    public void CollectCoin()
+    {
+        coins++;
+        print(coins);
     }
 }
